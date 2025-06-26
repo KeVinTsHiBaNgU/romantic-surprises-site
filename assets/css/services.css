@@ -1,0 +1,121 @@
+/* Section des services */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    /* background-color: #f9f3f3; */
+    background-color: var(--primary-color);
+}
+
+.section-title {
+    font-size: 2.8rem;
+    color: var(--white-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;  
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Service Item */
+.service-item {
+    width: 30%;  
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: transform var(--transition-speed);
+    margin-bottom: 30px;  /* Espacement entre les cartes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-image {
+    width: 100%;
+    height: 250px;  /* Ajuste la hauteur pour qu'elle ne soit pas trop grande */
+    object-fit: cover;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.service-content {
+    padding: 20px;
+}
+
+.service-title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.service-details {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-details li {
+    margin-bottom: 10px;
+}
+
+/* Bouton d'appel à l'action */
+.btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color var(--transition-speed);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .service-item {
+        width: 100%;  /* Les cartes prennent 100% de la largeur sur mobile */
+    }
+    .section-title {
+        font-size: 2.2rem;
+    }
+    .service-title {
+        font-size: 1.6rem;
+    }
+    .service-description {
+        font-size: 1rem;
+    }
+}

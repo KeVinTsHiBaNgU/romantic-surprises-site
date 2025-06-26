@@ -1,0 +1,114 @@
+/* Section Réservation */
+.reservation {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f7f1f1;  /* Couleur douce de fond */
+    color: var(--text-color);
+}
+
+.reservation-title {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.reservation-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Section des horaires */
+.reservation-hours {
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    color: var(--white-color);
+}
+
+.hours-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.hours-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Conteneur des options de réservation */
+.reservation-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style pour chaque bouton de réservation */
+.reservation-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    width: 200px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.reservation-btn i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Boutons spécifiques */
+.whatsapp {
+    background-color: #25D366;  /* Couleur verte de WhatsApp */
+    color: white;
+}
+
+.call {
+    background-color: #4CAF50;  /* Couleur verte pour appel */
+    color: white;
+}
+
+.sms {
+    background-color: #34b7f1;  /* Couleur bleue de SMS */
+    color: white;
+}
+
+.instagram {
+    background-color: #E4405F;  /* Couleur rouge-rose d'Instagram */
+    color: white;
+}
+
+.snapchat {
+    background-color: #FFFC00;  /* Couleur jaune de Snapchat */
+    color: black;
+}
+
+.tiktok {
+    background-color: #010101;  /* Couleur noire de TikTok */
+    color: white;
+}
+
+/* Effet au survol */
+.reservation-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .reservation-btn {
+        width: 150px;  /* Boutons plus petits sur mobile */
+        font-size: 1rem;
+    }
+}

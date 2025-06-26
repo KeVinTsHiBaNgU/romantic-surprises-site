@@ -1,0 +1,85 @@
+/* Animation du titre de la section Hero */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Animation des boutons */
+.hero .btn, .reservation-btn {
+    padding: 15px 25px;
+    background-color: #D07A8B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Zoom et changement de couleur au survol */
+.hero .btn:hover, .reservation-btn:hover {
+    background-color: #9D5B6A;
+    transform: scale(1.1);  /* Effet de zoom */
+}
+
+/* Animation de l'apparition du bouton */
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero .btn {
+    animation: fadeInButton 1.5s ease-out;
+}
+
+/* Animation fade-in des sections */
+@keyframes fadeInSection {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    opacity: 0;
+    animation: fadeInSection 1.5s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation des icônes de réseaux sociaux */
+.reservation-btn i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Zoom au survol des icônes */
+.reservation-btn:hover i {
+    transform: scale(1.2);  /* Légère augmentation de la taille */
+    color: #fff;  /* Changement de couleur sur hover */
+}

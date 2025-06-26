@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Romantic Surprises</title>
+    <title>CLOVE Events</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/services.css">
+    <link rel="stylesheet" href="./assets/css/reservations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
-    <!-- Header -->
+    <!-- Header (Hero Section avec Vidéo) -->
     <header class="hero">
+        <video autoplay muted loop class="hero-video" playsinline>
+            <source src="./assets/videos/video_accueil.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
         <div class="hero-content">
-            <h1>Romantic Surprises</h1>
+            <h1><span class="highlight-love">c</span><span class="highlight-love">LOVE</span> Events</h1>
             <p>Des moments inoubliables pour deux</p>
             <a href="#services" class="btn">Réservez maintenant</a>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Nos Services</h2>
-        <div class="service-container">
-            <div class="service-item">
-                <img src="picnic.jpg" alt="Pique-nique romantique">
-                <h3>Pique-nique pour deux</h3>
-                <p>Profitez d'un pique-nique romantique en plein air avec votre bien-aimé(e).</p>
-            </div>
-            <div class="service-item">
-                <img src="dinner.jpg" alt="Dîner romantique">
-                <h3>Dîner romantique</h3>
-                <p>Offrez-vous un dîner intime, spécialement préparé pour vous deux.</p>
-            </div>
-        </div>
-    </section>
+
+
+    <section class="about" id="about"></section>
+    <section class="services-section" id="services"></section>
+    <section class="reservation" id="reservations"></section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>© 2025 Romantic Surprises. Tous droits réservés.</p>
+            <p>© 2025 Kevin Tshibangu - Tous droits réservés.</p>
         </div>
     </footer>
+
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/sections.js" defer></script>
+
 </body>
+
 </html>
