@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #D07A8B; /* Couleur principale pour les boutons et accents */
+    --secondary-color: #9D5B6A; /* Couleur secondaire pour les titres et accents */
+    --background-color: #F7F1F1; /* Couleur de fond principale */
+    --text-color: #333; /* Couleur du texte principal */
+    --footer-background-color: #D07A8B; /* Couleur de fond du footer */
+    --white-color: #FFFFFF; /* Blanc pur */
+    --font-family: 'Arial', sans-serif; /* Police de caractères générale */
+    --font-size-large: 3rem; /* Taille de police pour les titres principaux */
+    --font-size-medium: 2.5rem; /* Taille de police pour les sous-titres */
+    --font-size-small: 1rem; /* Taille de police pour le texte normal */
+    --border-radius: 10px; /* Rayon des bordures pour donner un effet doux */
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre des éléments */
+    --transition-speed: 0.3s; /* Durée des transitions */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.hero {
+    background-image: url('romantic-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: var(--font-size-large);
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 15px 25px;
+    font-size: var(--font-size-small);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background-color var(--transition-speed);
+}
+
+
+.hero .btn:hover {
+    background-color: #9D5B6A;
+}
+
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #9D5B6A;
+}
+
+.service-item p {
+    padding: 0 20px 20px;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #D07A8B;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
