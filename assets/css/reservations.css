@@ -100,6 +100,17 @@
     color: white;
 }
 
+.email {
+    background-color: #007BFF;  /* Bleu pour email */
+    color: white;
+}
+
+/* Changer la couleur au survol */
+.email:hover {
+    background-color: #0056b3;  /* Couleur plus foncée au survol */
+}
+
+
 /* Effet au survol */
 .reservation-btn:hover {
     transform: scale(1.05);
